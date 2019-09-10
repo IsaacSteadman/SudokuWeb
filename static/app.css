@@ -1,0 +1,99 @@
+#sudoku>tbody td {
+	border: 1px solid black;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+}
+#sudoku td.big{
+	font-size: 36pt;
+	color: green;
+}
+#sudoku td.sel{
+	background-color: #FDD;
+}
+td.hl{
+	background-color: #DFD;
+}
+td.hl_one {
+	border: solid 2px blue !important;
+	color: blue;
+}
+td.hl_none {
+	background-color: #7F7F7F !important;
+}
+div#LinkPane {
+	background-color: #DDD;
+	border: 1px solid grey;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	left: 25%;
+	top: 25%;
+}
+#EditPane>div#actBtns{
+	width: 84px;
+	height: 40px;
+	background-color: #404040;
+}
+#EditPane>div#highlight>table, #EditPane>div#EditNote>table {
+	border: solid 2px black;
+}
+#EditPane>div#highlight, #EditPane>div#EditNote {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#EditPane>div#EditNote>table td {
+	background-color: #FBB;
+}
+#EditPane>div#EditNote>table td.note_present {
+	background-color: #BFB;
+}
+#EditPane>div#highlight>table td {
+	border: solid 1px black;
+}
+html {
+	touch-action: manipulation;
+}
+#EditPane>div#actBtns>button[name="undo"], #EditPane>div#actBtns>button[name="redo"] {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	border: 0px
+}
+#EditPane>div#actBtns>button[name="undo"]:disabled, #EditPane>div#actBtns>button[name="redo"]:disabled {
+	opacity: 0.2;
+}
+#EditPane>div#actBtns>button[name="undo"]{
+	background-image: url("/undo.png");
+}
+#EditPane>div#actBtns>button[name="redo"]{
+	background-image: url("/redo.png");
+}
+#sudoku, #sudoku>tbody{
+	margin: 1em auto;
+}
+#sudoku>tbody td:nth-child(3n) {
+	border-right: 2px solid black;
+}
+#sudoku>tbody td:nth-child(3n+1) {
+	border-left: 2px solid black;
+}
+#sudoku>tbody td:first-child {
+	border-left: 3px solid black;
+}
+#sudoku>tbody td:last-child {
+	border-right: 3px solid black;
+}
+#sudoku>tbody tr:nth-child(3n + 1) td {
+	border-top: 2px solid black;
+}
+#sudoku>tbody tr:nth-child(3n) td {
+	border-bottom: 2px solid black;
+}
+#sudoku>tbody tr:first-child td{
+	border-top: 3px solid black;
+}
+#sudoku>tbody tr:last-child td{
+	border-bottom: 3px solid black;
+}

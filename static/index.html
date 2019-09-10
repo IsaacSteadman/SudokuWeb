@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/app.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+    <div id="content">
+        <table id="sudoku">
+        <tbody>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        <tr>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        <td></td> <td></td> <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <div id="EditPane" style="margin:auto;width:430px">
+            <div id="highlight" style="float:right;">
+            <span>highlight</span>
+            <table>
+            <tbody>
+            <tr><td>&nbsp 1&nbsp </td><td>&nbsp 2&nbsp </td><td>&nbsp 3&nbsp </td></tr>
+            <tr><td>&nbsp 4&nbsp </td><td>&nbsp 5&nbsp </td><td>&nbsp 6&nbsp </td></tr>
+            <tr><td>&nbsp 7&nbsp </td><td>&nbsp 8&nbsp </td><td>&nbsp 9&nbsp </td></tr>
+            </tbody>
+            </table>
+            </div>
+            <div id="EditNote" style="float:right;">
+            <span>edit notes</span>
+            <table>
+            <tbody>
+            <tr><td>&nbsp 1&nbsp </td><td>&nbsp 2&nbsp </td><td>&nbsp 3&nbsp </td></tr>
+            <tr><td>&nbsp 4&nbsp </td><td>&nbsp 5&nbsp </td><td>&nbsp 6&nbsp </td></tr>
+            <tr><td>&nbsp 7&nbsp </td><td>&nbsp 8&nbsp </td><td>&nbsp 9&nbsp </td></tr>
+            </tbody>
+            </table>
+            </div>
+            <p id="text"></p>
+            <input type="text"/>
+            <button name="change">Change</button><br/>
+            <button name="show_link" onclick="Sudoku.Saver.ShowLink()" style="float:right;">Show Link</button>
+            <div id="actBtns">
+            <button name="undo"><!--<img src="/undo.png"></img>--></button>
+            <button name="redo"><!--<img src="/redo.png"></img>--></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
